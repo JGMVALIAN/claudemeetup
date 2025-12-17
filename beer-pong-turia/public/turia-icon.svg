@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#F5F0E8"/>
+  <g fill="#8B7355">
+    <!-- Torre izquierda -->
+    <rect x="15" y="25" width="20" height="45"/>
+    <rect x="12" y="18" width="26" height="10"/>
+    <rect x="12" y="10" width="5" height="10"/>
+    <rect x="20" y="10" width="5" height="10"/>
+    <rect x="28" y="10" width="5" height="10"/>
+
+    <!-- Torre derecha -->
+    <rect x="65" y="25" width="20" height="45"/>
+    <rect x="62" y="18" width="26" height="10"/>
+    <rect x="65" y="10" width="5" height="10"/>
+    <rect x="73" y="10" width="5" height="10"/>
+    <rect x="81" y="10" width="5" height="10"/>
+
+    <!-- Centro -->
+    <rect x="35" y="30" width="30" height="40"/>
+    <rect x="32" y="23" width="36" height="10"/>
+    <rect x="38" y="15" width="5" height="10"/>
+    <rect x="48" y="15" width="5" height="10"/>
+    <rect x="58" y="15" width="5" height="10"/>
+
+    <!-- Arco -->
+    <path d="M42 70 L42 52 Q50 42 58 52 L58 70 Z" fill="#F5F0E8"/>
+  </g>
+
+  <!-- Texto -->
+  <text x="50" y="85" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#8B7355">TURIA</text>
+</svg>
