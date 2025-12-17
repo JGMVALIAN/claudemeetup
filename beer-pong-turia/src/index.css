@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-turia-gold: #8B7355;
+  --color-turia-dark: #5C4D3C;
+  --color-turia-cream: #F5F0E8;
+  --color-turia-amber: #D4A84B;
+  --color-turia-beer: #F5A623;
+  --color-turia-foam: #FFF8E7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #F5F0E8 0%, #E8E0D0 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(139, 115, 85, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(139, 115, 85, 0.6); }
+}
+
+@keyframes ball-fly {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes cup-hit {
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.1) rotate(-5deg); }
+  50% { transform: scale(0.9) rotate(5deg); }
+  75% { transform: scale(1.05) rotate(-2deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes victory {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-ball-fly {
+  animation: ball-fly 0.3s ease-out;
+}
+
+.animate-cup-hit {
+  animation: cup-hit 0.5s ease-out;
+}
+
+.animate-victory {
+  animation: victory 0.5s ease-in-out infinite;
+}
